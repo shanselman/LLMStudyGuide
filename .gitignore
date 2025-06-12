@@ -1,0 +1,17 @@
+# Exclude markdown content files
+*.md
+!README.md
+
+# Exclude Windows zone identifier files
+*.Zone.Identifier
+
+# Generated files (will be created by generate-manifest.js)
+manifest.json
+files.txt
+
+# Common development files
+.DS_Store
+node_modules/
+.env
+.vscode/
+*.log
