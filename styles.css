@@ -14,8 +14,7 @@ body {
 .container {
     display: flex;
     height: 100vh;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
@@ -108,6 +107,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    max-width: 1200px; /* Prevent content from getting too wide */
 }
 
 .content-header {
@@ -284,46 +284,54 @@ body {
     font-style: italic;
 }
 
-/* Study Progress Styles */
+/* Study Progress Styles - Redesigned for stability */
 .study-link-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
-    padding: 0.25rem 0;
+    display: inline-block;
+    position: relative;
+    margin: 0 0.75rem 0 0;
+    padding: 0;
+    vertical-align: baseline;
+    white-space: nowrap;
 }
 
 .study-checkbox {
-    margin-top: 0.2rem;
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    margin: 0 0.4rem 0 0;
+    vertical-align: baseline;
     cursor: pointer;
     accent-color: #27ae60;
+    position: relative;
+    top: 0.1em; /* Fine-tune alignment with text baseline */
 }
 
 .study-link-label {
-    flex: 1;
+    display: inline;
     cursor: pointer;
-    display: block;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: baseline;
 }
 
 .study-link {
     color: #3498db;
     text-decoration: none;
-    transition: all 0.3s ease;
     display: inline;
+    vertical-align: baseline;
+    transition: color 0.2s ease;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .study-link:hover {
-    text-decoration: underline;
     color: #2980b9;
+    text-decoration: underline;
 }
 
 .study-link.completed {
     color: #27ae60;
     text-decoration: line-through;
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 .study-link.completed:hover {
@@ -331,17 +339,17 @@ body {
     opacity: 0.9;
 }
 
-/* Add subtle background for completed items */
+/* Subtle background for completed items - NO LAYOUT CHANGES */
 .study-link-wrapper:has(.study-checkbox:checked) {
-    background: rgba(39, 174, 96, 0.05);
-    border-radius: 4px;
-    padding: 0.5rem;
-    margin: 0.5rem -0.25rem;
+    background: rgba(39, 174, 96, 0.08);
+    border-radius: 3px;
+    /* NO padding or margin changes to prevent movement */
 }
 
-/* Style for links within list items */
+/* Ensure proper inline behavior within list items */
 .content-body li .study-link-wrapper {
-    margin: 0.25rem 0;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 /* Progress indicator in sidebar (if we want to add it later) */
