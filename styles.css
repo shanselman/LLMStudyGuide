@@ -116,18 +116,6 @@ body {
     max-width: 1200px; /* Prevent content from getting too wide */
 }
 
-.content-header {
-    padding: 2rem 2rem 1rem;
-    border-bottom: 1px solid #ecf0f1;
-    background: #fff;
-}
-
-.content-header h1 {
-    font-size: 2rem;
-    color: #2c3e50;
-    font-weight: 600;
-}
-
 .content-body {
     flex: 1;
     padding: 2rem;
@@ -406,13 +394,8 @@ body {
         min-height: 60vh;
     }
     
-    .content-header,
     .content-body {
         padding: 1rem;
-    }
-    
-    .content-header h1 {
-        font-size: 1.5rem;
     }
     
     .study-link-wrapper {

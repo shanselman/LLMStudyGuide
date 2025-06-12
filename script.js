@@ -1,7 +1,6 @@
 class MarkdownBrowser {
     constructor() {
         this.fileList = document.getElementById('fileList');
-        this.contentTitle = document.getElementById('contentTitle');
         this.contentBody = document.getElementById('contentBody');
         this.markdownFiles = [];
         this.currentFile = null;
@@ -139,9 +138,6 @@ class MarkdownBrowser {
                 headerPrefix: 'heading-'
             });
             
-            // Use full title from manifest if available, otherwise format the filename
-            const fileInfo = this.markdownFiles.find(f => f.name === filename);
-            this.contentTitle.textContent = fileInfo?.fullTitle || this.formatTitle(filename);
             this.contentBody.innerHTML = html;
             
             // Add study progress tracking to links
@@ -184,7 +180,6 @@ class MarkdownBrowser {
         });
         
         // Reset to welcome content
-        this.contentTitle.textContent = 'Welcome';
         this.contentBody.innerHTML = `
             <div class="welcome-message">
                 <h2>LLM Interview Questions Browser</h2>
