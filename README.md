@@ -4,7 +4,7 @@ A static website for browsing markdown files containing LLM interview questions 
 
 ## Setup
 
-1. Place your markdown files in the same directory as `index.html`
+1. Place your numbered markdown files in the `content/` directory
 2. Run the manifest generator to create the file list:
    ```bash
    node generate-manifest.js
@@ -38,5 +38,5 @@ Then open http://localhost:8000 in your browser.
 
 ## Credits
 
-- **Original Content**: [Hao Hoang](https://www.linkedin.com/posts/hoang-van-hao_top-50-linkedin-llm-interview-questions-activity-7332959385280778240-lyU0/)
+- **Original PDF Content**: [Hao Hoang](https://www.linkedin.com/posts/hoang-van-hao_top-50-linkedin-llm-interview-questions-activity-7332959385280778240-lyU0/)
 - **Website Implementation**: Scott Hanselman

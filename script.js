@@ -55,12 +55,12 @@ class MarkdownBrowser {
                 console.log('No files.txt found...');
             }
 
-            // Fallback: assume common markdown files exist
+            // Fallback: assume common markdown files exist in content folder
             this.markdownFiles = [
-                { name: 'introduction.md', title: 'Introduction' },
-                { name: 'basic-concepts.md', title: 'Basic Concepts' },
-                { name: 'advanced-topics.md', title: 'Advanced Topics' },
-                { name: 'practical-applications.md', title: 'Practical Applications' }
+                { name: 'content/01_tokenization.md', title: '1 - Tokenization', fullTitle: 'Question 1 - Tokenization' },
+                { name: 'content/02_attention_mechanism.md', title: '2 - Attention Mechanism', fullTitle: 'Question 2 - Attention Mechanism' },
+                { name: 'content/03_context_window.md', title: '3 - Context Window', fullTitle: 'Question 3 - Context Window' },
+                { name: 'content/04_lora_vs_qlora.md', title: '4 - Lora Vs Qlora', fullTitle: 'Question 4 - Lora Vs Qlora' }
             ];
             
         } catch (error) {
@@ -138,7 +138,9 @@ class MarkdownBrowser {
                 headerPrefix: 'heading-'
             });
             
-            this.contentTitle.textContent = this.formatTitle(filename);
+            // Use full title from manifest if available, otherwise format the filename
+            const fileInfo = this.markdownFiles.find(f => f.name === filename);
+            this.contentTitle.textContent = fileInfo?.fullTitle || this.formatTitle(filename);
             this.contentBody.innerHTML = html;
             
             // Add study progress tracking to links
