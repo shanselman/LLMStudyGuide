@@ -28,6 +28,10 @@ class MarkdownBrowser {
                 if (response.ok) {
                     const manifest = await response.json();
                     this.markdownFiles = manifest.files || [];
+                    // Pass total links count to study progress tracker
+                    if (manifest.totalLinks) {
+                        this.studyProgress.setTotalLinksFromManifest(manifest.totalLinks);
+                    }
                     return;
                 }
             } catch (e) {
@@ -167,6 +171,7 @@ class StudyProgressTracker {
         this.completedLinks = this.loadProgress();
         this.allLinks = this.loadAllLinks();
         this.progressElement = null;
+        this.totalLinksFromManifest = null;
     }
 
     loadProgress() {
@@ -322,13 +327,22 @@ class StudyProgressTracker {
         localStorage.setItem(this.allLinksKey, JSON.stringify(this.allLinks));
     }
 
+    setTotalLinksFromManifest(totalLinks) {
+        this.totalLinksFromManifest = totalLinks;
+        console.log(`📋 Set total links from manifest: ${totalLinks}`);
+        // Update progress display if it already exists
+        if (this.progressElement) {
+            this.updateGlobalProgress();
+        }
+    }
+
     getGlobalProgressStats() {
-        const allLinkIds = Object.keys(this.allLinks);
-        const total = allLinkIds.length;
-        const completed = allLinkIds.filter(linkId => this.completedLinks[linkId]).length;
+        // Use manifest total if available, otherwise fall back to discovered links
+        const total = this.totalLinksFromManifest || Object.keys(this.allLinks).length;
+        const completed = Object.values(this.completedLinks).filter(Boolean).length;
         const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
         
-        console.log(`📈 Global Progress: ${completed}/${total} (${percentage}%)`);
+        console.log(`📈 Global Progress: ${completed}/${total} (${percentage}%) ${this.totalLinksFromManifest ? '[using manifest total]' : '[using discovered links]'}`);
         return { completed, total, percentage };
     }
 
