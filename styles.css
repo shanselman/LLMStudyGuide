@@ -284,6 +284,95 @@ body {
     font-style: italic;
 }
 
+/* Study Progress Styles */
+.study-link-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+}
+
+.study-checkbox {
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #27ae60;
+}
+
+.study-link-label {
+    flex: 1;
+    cursor: pointer;
+    display: block;
+}
+
+.study-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline;
+}
+
+.study-link:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+.study-link.completed {
+    color: #27ae60;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.study-link.completed:hover {
+    color: #2ecc71;
+    opacity: 0.9;
+}
+
+/* Add subtle background for completed items */
+.study-link-wrapper:has(.study-checkbox:checked) {
+    background: rgba(39, 174, 96, 0.05);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 0.5rem -0.25rem;
+}
+
+/* Style for links within list items */
+.content-body li .study-link-wrapper {
+    margin: 0.25rem 0;
+}
+
+/* Progress indicator in sidebar (if we want to add it later) */
+.progress-indicator {
+    background: rgba(52, 73, 94, 0.5);
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #34495e;
+    margin-top: auto;
+}
+
+.progress-bar {
+    background: #34495e;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.progress-text {
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -310,5 +399,14 @@ body {
     
     .content-header h1 {
         font-size: 1.5rem;
+    }
+    
+    .study-link-wrapper {
+        gap: 0.4rem;
+    }
+    
+    .study-checkbox {
+        width: 14px;
+        height: 14px;
     }
 }
