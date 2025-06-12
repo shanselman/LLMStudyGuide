@@ -4,6 +4,7 @@
 
 # Exclude Windows zone identifier files
 *.Zone.Identifier
+*:Zone.Identifier
 
 # Generated files (will be created by generate-manifest.js)
 manifest.json
