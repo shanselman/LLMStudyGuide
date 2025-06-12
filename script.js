@@ -14,6 +14,7 @@ class MarkdownBrowser {
         await this.loadMarkdownFiles();
         this.renderFileList();
         this.studyProgress.initializeProgressDisplay();
+        this.setupHeaderClick();
     }
 
     async loadMarkdownFiles() {
@@ -163,6 +164,41 @@ class MarkdownBrowser {
 
     showError(message) {
         this.contentBody.innerHTML = `<div class="error">⚠️ ${message}</div>`;
+    }
+
+    setupHeaderClick() {
+        // Make the sidebar header clickable to return to welcome page
+        const siteTitle = document.getElementById('siteTitle');
+        if (siteTitle) {
+            siteTitle.style.cursor = 'pointer';
+            siteTitle.addEventListener('click', () => {
+                this.showWelcomePage();
+            });
+        }
+    }
+
+    showWelcomePage() {
+        // Clear active file selection
+        this.fileList.querySelectorAll('.file-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Reset to welcome content
+        this.contentTitle.textContent = 'Welcome';
+        this.contentBody.innerHTML = `
+            <div class="welcome-message">
+                <h2>LLM Interview Questions Browser</h2>
+                <p>This resource contains interview questions and answers about Large Language Models, originally compiled by <strong>Hao Hoang</strong> in his comprehensive PDF guide.</p>
+                <p>While this website was spec'd and created by <strong>Scott Hanselman</strong> as a browsable resource, all credit for the original PDF goes to <a href="https://www.linkedin.com/posts/hoang-van-hao_top-50-linkedin-llm-interview-questions-activity-7332959385280778240-lyU0/" target="_blank">Hao Hoang</a>.</p>
+                <p>Select a topic from the left sidebar to begin exploring the questions and answers and study resources.</p>
+                <div class="credit-links">
+                    <p><a href="https://www.linkedin.com/posts/hoang-van-hao_top-50-linkedin-llm-interview-questions-activity-7332959385280778240-lyU0/" target="_blank">📄 Original PDF by Hao Hoang</a></p>
+                </div>
+            </div>
+        `;
+        
+        // Clear current file tracking
+        this.currentFile = null;
     }
 }
 

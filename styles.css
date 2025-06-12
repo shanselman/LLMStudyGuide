@@ -39,6 +39,12 @@ body {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: #ecf0f1;
+    transition: color 0.2s ease;
+}
+
+.sidebar h2:hover {
+    color: #3498db;
+    text-decoration: underline;
 }
 
 .attribution {
