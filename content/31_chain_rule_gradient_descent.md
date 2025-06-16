@@ -2,22 +2,20 @@
 
 **Human Answer (Hao Hoang):**
 The chain rule computes derivatives of composite functions:
-d/dx f(g(x)) = f'(g(x)) · g'(x)
+$$\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)$$
 In gradient descent, it enables backpropagation to calculate gradients layer by layer, updating parameters to minimize loss efficiently across deep LLM architectures.
 
 **AI Answer:**
 The chain rule enables backpropagation through the complex computational graphs of LLMs by decomposing gradient computation into manageable components, allowing efficient training of models with billions of parameters.
 
 **Mathematical Foundation:**
-```
-∂L/∂θ = ∂L/∂y × ∂y/∂z × ∂z/∂θ
-```
+$$\frac{\partial L}{\partial \theta} = \frac{\partial L}{\partial y} \times \frac{\partial y}{\partial z} \times \frac{\partial z}{\partial \theta}$$
 
 **LLM Application:**
 ```python
 # Example: Gradient flow through transformer layer
-∂L/∂input = ∂L/∂output × ∂output/∂attention × ∂attention/∂input
 ```
+$$\frac{\partial L}{\partial \text{input}} = \frac{\partial L}{\partial \text{output}} \times \frac{\partial \text{output}}{\partial \text{attention}} \times \frac{\partial \text{attention}}{\partial \text{input}}$$
 
 **Research Citations:**
 - [Rumelhart, D. E., et al. (1986). "Learning representations by back-propagating errors"](https://www.nature.com/articles/323533a0) - Foundational backpropagation algorithm using chain rule

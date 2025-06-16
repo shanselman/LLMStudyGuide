@@ -2,7 +2,7 @@
 
 **Human Answer (Hao Hoang):**
 In self-attention, the dot product between query (Q) and key (K) vectors computes similarity scores:
-Score = Q·K / √dk
+$$\text{Score} = \frac{Q \cdot K}{\sqrt{d_k}}$$
 High scores indicate relevant tokens. While efficient, its quadratic complexity (O(n²)) for long sequences has spurred research into sparse attention alternatives.
 
 **AI Answer:**
@@ -11,9 +11,7 @@ The dot product is the fundamental operation in self-attention that measures sim
 **Mathematical Foundation:**
 
 **Dot Product Formula:**
-```
-score(q, k) = q · k = Σᵢ qᵢkᵢ = ||q|| ||k|| cos(θ)
-```
+$$\text{score}(q, k) = q \cdot k = \sum_{i} q_i k_i = ||q|| ||k|| \cos(\theta)$$
 
 Where:
 - q: Query vector
@@ -22,12 +20,10 @@ Where:
 - cos(θ): Cosine similarity
 
 **Self-Attention Context:**
-```
-Attention(Q, K, V) = softmax(QK^T / √d_k)V
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
-Where QK^T computes all pairwise dot products:
-QK^T[i,j] = query_i · key_j
-```
+Where $QK^T$ computes all pairwise dot products:
+$$QK^T[i,j] = \text{query}_i \cdot \text{key}_j$$
 
 **Why Dot Product Works:**
 

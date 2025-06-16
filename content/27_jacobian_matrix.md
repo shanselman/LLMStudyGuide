@@ -7,13 +7,11 @@ The Jacobian matrix captures partial derivatives of outputs with respect to inpu
 The Jacobian matrix captures partial derivatives of vector outputs with respect to vector inputs, playing a crucial role in transformer backpropagation by enabling gradient computation through multi-dimensional transformations like attention mechanisms and layer normalization.
 
 **Mathematical Definition:**
-```
-J[i,j] = ∂f_i/∂x_j
+$$J_{i,j} = \frac{\partial f_i}{\partial x_j}$$
 
-For transformer layers:
-J_attention = ∂(attention_output)/∂(input)
-J_layernorm = ∂(normalized_output)/∂(input)
-```
+**For transformer layers:**
+$$J_{\text{attention}} = \frac{\partial(\text{attention output})}{\partial(\text{input})}$$
+$$J_{\text{layernorm}} = \frac{\partial(\text{normalized output})}{\partial(\text{input})}$$
 
 **Key Applications:**
 - **Multi-head attention**: Computing gradients through parallel attention heads

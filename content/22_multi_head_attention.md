@@ -7,11 +7,10 @@ Multi-head attention splits queries, keys, and values into multiple subspaces, a
 Multi-head attention is a key component of transformer architectures that runs multiple attention mechanisms in parallel, allowing the model to focus on different types of relationships and information simultaneously. Each "head" learns to attend to different aspects of the input, creating richer and more nuanced representations.
 
 **Mathematical Foundation:**
-```
-MultiHead(Q, K, V) = Concat(head₁, head₂, ..., head_h)W^O
+$$\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \text{head}_2, \ldots, \text{head}_h)W^O$$
 
-where head_i = Attention(QW_i^Q, KW_i^K, VW_i^V)
-```
+where:
+$$\text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)$$
 
 **Architecture Details:**
 - **h heads**: Typically 8, 12, or 16 in modern LLMs

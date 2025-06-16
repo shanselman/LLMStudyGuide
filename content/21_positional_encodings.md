@@ -16,10 +16,8 @@ Both would produce identical attention patterns.
 **Sinusoidal Positional Encoding (Original Transformer):**
 
 **Mathematical Formula:**
-```
-PE(pos, 2i) = sin(pos / 10000^(2i/d_model))
-PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))
-```
+$$PE(\text{pos}, 2i) = \sin\left(\frac{\text{pos}}{10000^{2i/d_{\text{model}}}}\right)$$
+$$PE(\text{pos}, 2i+1) = \cos\left(\frac{\text{pos}}{10000^{2i/d_{\text{model}}}}\right)$$
 
 Where:
 - pos: Position in sequence
@@ -102,9 +100,7 @@ def get_relative_position_bias(seq_len, num_buckets=32):
 - Used in modern models like LLaMA, GPT-NeoX
 
 **Mathematical Formulation:**
-```
-RoPE(x, pos) = x * cos(pos * θ) + rotate(x) * sin(pos * θ)
-```
+$$\text{RoPE}(x, \text{pos}) = x \cos(\text{pos} \cdot \theta) + \text{rotate}(x) \sin(\text{pos} \cdot \theta)$$
 
 **Advantages:**
 - Better handling of long sequences

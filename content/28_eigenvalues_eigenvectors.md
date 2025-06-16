@@ -7,10 +7,8 @@ Eigenvectors define principal directions in data, and eigenvalues indicate their
 Eigenvalues and eigenvectors provide the mathematical foundation for dimensionality reduction techniques like PCA, identifying the principal directions of variance in high-dimensional embedding spaces used by LLMs.
 
 **Mathematical Foundation:**
-```
-Av = λv
-Where A is covariance matrix, v is eigenvector, λ is eigenvalue
-```
+$$Av = \lambda v$$
+Where $A$ is covariance matrix, $v$ is eigenvector, $\lambda$ is eigenvalue
 
 **Applications in LLMs:**
 - **Embedding analysis**: Understanding structure in token embeddings

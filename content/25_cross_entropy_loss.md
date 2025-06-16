@@ -2,7 +2,7 @@
 
 **Human Answer (Hao Hoang):**
 Cross-entropy loss measures the divergence between predicted and true token probabilities:
-L = -Σyi log(ŷi)
+$$L = -\sum_i y_i \log(\hat{y}_i)$$
 It penalizes incorrect predictions, encouraging accurate token selection. In language modeling, it ensures the model assigns high probabilities to correct next tokens, optimizing performance.
 
 **AI Answer:**
@@ -11,12 +11,10 @@ Cross-entropy loss is the standard loss function for language modeling because i
 **Mathematical Foundation:**
 
 **Cross-Entropy Formula:**
-```
-L = -Σᵢ yᵢ log(ŷᵢ)
+$$L = -\sum_{i} y_i \log(\hat{y}_i)$$
 
-For language modeling:
-L = -Σₜ log P(wₜ | w₁, ..., wₜ₋₁)
-```
+**For language modeling:**
+$$L = -\sum_{t} \log P(w_t | w_1, \ldots, w_{t-1})$$
 
 Where:
 - yᵢ: True distribution (one-hot for single token)
@@ -26,22 +24,16 @@ Where:
 **Information-Theoretic Interpretation:**
 
 **1. Entropy:**
-```
-H(Y) = -Σᵢ P(yᵢ) log P(yᵢ)
-# Measures uncertainty in true distribution
-```
+$$H(Y) = -\sum_{i} P(y_i) \log P(y_i)$$
+*Measures uncertainty in true distribution*
 
 **2. Cross-Entropy:**
-```
-H(Y, Ŷ) = -Σᵢ P(yᵢ) log Q(yᵢ)
-# Measures dissimilarity between distributions
-```
+$$H(Y, \hat{Y}) = -\sum_{i} P(y_i) \log Q(y_i)$$
+*Measures dissimilarity between distributions*
 
 **3. KL Divergence:**
-```
-D_KL(Y||Ŷ) = H(Y, Ŷ) - H(Y)
-# Cross-entropy minimization ≡ KL divergence minimization
-```
+$$D_{KL}(Y||\hat{Y}) = H(Y, \hat{Y}) - H(Y)$$
+*Cross-entropy minimization ≡ KL divergence minimization*
 
 **Why Cross-Entropy for Language Modeling:**
 
@@ -152,10 +144,8 @@ def focal_loss(predictions, targets, alpha=1, gamma=2):
 **Perplexity Connection:**
 
 **Definition:**
-```
-Perplexity = exp(Cross_Entropy_Loss)
-PPL = exp(-1/N Σᵢ log P(wᵢ))
-```
+$$\text{Perplexity} = \exp(\text{Cross Entropy Loss})$$
+$$\text{PPL} = \exp\left(-\frac{1}{N} \sum_{i} \log P(w_i)\right)$$
 
 **Interpretation:**
 ```python

@@ -17,10 +17,8 @@ Transformers mitigate vanishing gradients through residual connections, layer no
 - **Proper initialization**: Prevents gradient scale issues
 
 **Mathematical Analysis:**
-```
-With residuals: ∂L/∂x = ∂L/∂output × (1 + ∂F/∂x)
-# Gradient always has identity component
-```
+$$\text{With residuals: } \frac{\partial L}{\partial x} = \frac{\partial L}{\partial \text{output}} \times \left(1 + \frac{\partial F}{\partial x}\right)$$
+*Gradient always has identity component*
 
 **Research Citations:**
 - [He, K., et al. (2016). "Deep Residual Learning for Image Recognition"](https://arxiv.org/abs/1512.03385) - ResNet architecture with residual connections

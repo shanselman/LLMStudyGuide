@@ -2,20 +2,18 @@
 
 **Human Answer (Hao Hoang):**
 Attention scores are computed as:
-Attention(Q, K, V) = softmax(QK^T / √dk) V
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V$$
 The scaled dot product measures token relevance, and softmax normalizes scores to focus on key tokens, enhancing context-aware generation in tasks like summarization.
 
 **AI Answer:**
 Attention scores in transformers are calculated using scaled dot-product attention, where query-key similarity is computed, scaled, and normalized to create probability distributions over input positions.
 
 **Mathematical Formula:**
-```
-Attention(Q,K,V) = softmax(QK^T/√d_k)V
-```
+$$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 **Step-by-step Process:**
-1. Compute similarity: QK^T
-2. Scale by √d_k to prevent saturation
+1. Compute similarity: $QK^T$
+2. Scale by $\sqrt{d_k}$ to prevent saturation
 3. Apply softmax for normalization
 4. Weight values by attention probabilities
 

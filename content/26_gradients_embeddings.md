@@ -2,7 +2,7 @@
 
 **Human Answer (Hao Hoang):**
 Gradients for embeddings are computed using the chain rule during backpropagation:
-∂L/∂E = (∂L/∂logits) · (∂logits/∂E)
+$$\frac{\partial L}{\partial E} = \frac{\partial L}{\partial \text{logits}} \cdot \frac{\partial \text{logits}}{\partial E}$$
 These gradients adjust embedding vectors to minimize loss, refining their semantic representations for better task performance.
 
 **AI Answer:**
@@ -19,14 +19,12 @@ Loss → Logits → Hidden States → Embeddings → Parameters
 **Mathematical Foundation:**
 
 **Chain Rule Application:**
-```
-∂L/∂W_emb = ∂L/∂emb × ∂emb/∂W_emb
+$$\frac{\partial L}{\partial W_{\text{emb}}} = \frac{\partial L}{\partial \text{emb}} \times \frac{\partial \text{emb}}{\partial W_{\text{emb}}}$$
 
 Where:
-- L: Loss function
-- emb: Embedding vectors
-- W_emb: Embedding weight matrix
-```
+- $L$: Loss function
+- $\text{emb}$: Embedding vectors
+- $W_{\text{emb}}$: Embedding weight matrix
 
 **Embedding Lookup Operation:**
 ```python
@@ -137,8 +135,7 @@ class TiedEmbeddings(nn.Module):
 # 1. Input embedding gradients (from encoder/decoder)
 # 2. Output projection gradients (from classification head)
 
-∂L/∂W_emb = ∂L/∂input_emb × ∂input_emb/∂W_emb + 
-            ∂L/∂output_logits × ∂output_logits/∂W_emb
+$$\frac{\partial L}{\partial W_{\text{emb}}} = \frac{\partial L}{\partial \text{input\_emb}} \times \frac{\partial \text{input\_emb}}{\partial W_{\text{emb}}} + \frac{\partial L}{\partial \text{output\_logits}} \times \frac{\partial \text{output\_logits}}{\partial W_{\text{emb}}}$$
 ```
 
 **Positional Embedding Gradients:**

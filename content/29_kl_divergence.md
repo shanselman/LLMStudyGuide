@@ -2,16 +2,14 @@
 
 **Human Answer (Hao Hoang):**
 KL divergence quantifies the difference between two probability distributions:
-D_KL(P||Q) = Σ P(x) log(P(x)/Q(x))
+$$D_{KL}(P||Q) = \sum P(x) \log\left(\frac{P(x)}{Q(x)}\right)$$
 In LLMs, it evaluates how closely model predictions match true distributions, guiding fine-tuning to improve output quality and alignment with target data.
 
 **AI Answer:**
 KL divergence measures the difference between probability distributions, serving as a fundamental metric in LLM training for knowledge distillation, regularization, and distribution alignment.
 
 **Mathematical Definition:**
-```
-D_KL(P||Q) = Σ P(x) log(P(x)/Q(x))
-```
+$$D_{KL}(P||Q) = \sum P(x) \log\left(\frac{P(x)}{Q(x)}\right)$$
 
 **LLM Applications:**
 - **Knowledge distillation**: Matching student and teacher distributions
