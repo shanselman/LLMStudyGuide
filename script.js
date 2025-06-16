@@ -14,6 +14,8 @@ class MarkdownBrowser {
         this.renderFileList();
         this.studyProgress.initializeProgressDisplay();
         this.setupHeaderClick();
+        this.setupBrowserNavigation();
+        this.handleInitialLoad();
     }
 
     async loadMarkdownFiles() {
@@ -110,7 +112,7 @@ class MarkdownBrowser {
         activeItem.classList.add('active');
     }
 
-    async loadMarkdownFile(filename) {
+    async loadMarkdownFile(filename, updateHistory = true) {
         try {
             this.showLoading();
             
@@ -122,6 +124,13 @@ class MarkdownBrowser {
             const markdownContent = await response.text();
             this.renderMarkdown(markdownContent, filename);
             this.currentFile = filename;
+            
+            // Update browser history and title
+            if (updateHistory) {
+                const fileInfo = this.markdownFiles.find(f => f.name === filename);
+                const title = fileInfo ? fileInfo.fullTitle || fileInfo.title : filename;
+                this.updateBrowserHistory(filename, title);
+            }
             
         } catch (error) {
             console.error('Error loading markdown file:', error);
@@ -180,7 +189,7 @@ class MarkdownBrowser {
         }
     }
 
-    showWelcomePage() {
+    showWelcomePage(updateHistory = true) {
         // Clear active file selection
         this.fileList.querySelectorAll('.file-item').forEach(item => {
             item.classList.remove('active');
@@ -201,6 +210,58 @@ class MarkdownBrowser {
         
         // Clear current file tracking
         this.currentFile = null;
+        
+        // Update browser history
+        if (updateHistory) {
+            this.updateBrowserHistory(null, 'LLM Interview Questions Browser');
+        }
+    }
+
+    setupBrowserNavigation() {
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', (event) => {
+            const state = event.state;
+            if (state && state.filename) {
+                // Load the file without updating history (to avoid duplicate entries)
+                this.loadMarkdownFile(state.filename, false);
+                this.setActiveFileByName(state.filename);
+            } else {
+                // Go back to welcome page without updating history
+                this.showWelcomePage(false);
+            }
+        });
+    }
+
+    handleInitialLoad() {
+        // Check if there's a file specified in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const file = urlParams.get('file');
+        
+        if (file) {
+            // Load the specified file
+            this.loadMarkdownFile(file, false); // Don't update history on initial load
+            this.setActiveFileByName(file);
+        }
+    }
+
+    updateBrowserHistory(filename, title) {
+        const url = filename ? `${window.location.pathname}?file=${encodeURIComponent(filename)}` : window.location.pathname;
+        const state = filename ? { filename, title } : null;
+        
+        // Update browser history
+        history.pushState(state, title, url);
+        document.title = title;
+    }
+
+    setActiveFileByName(filename) {
+        // Find and activate the corresponding sidebar item
+        const fileItems = document.querySelectorAll('.file-item');
+        fileItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.dataset.file === filename) {
+                item.classList.add('active');
+            }
+        });
     }
 }
 
