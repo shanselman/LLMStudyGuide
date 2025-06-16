@@ -2,20 +2,18 @@
 
 **Human Answer (Hao Hoang):**
 The softmax function normalizes attention scores into a probability distribution:
-e^xi / Σje^xj
+$$\frac{e^{x_i}}{\sum_j e^{x_j}}$$
 In attention, it converts raw similarity scores (from query-key dot products) into weights, emphasizing relevant tokens. This ensures the model focuses on contextually important parts of the input.
 
 **AI Answer:**
 The softmax function is crucial in attention mechanisms as it converts raw attention scores into normalized probability distributions, ensuring that attention weights sum to 1 and enabling the model to focus on relevant parts of the input sequence.
 
 **Mathematical Definition:**
-```
-softmax(x_i) = exp(x_i) / Σⱼ exp(x_j)
-```
+$$\text{softmax}(x_i) = \frac{\exp(x_i)}{\sum_j \exp(x_j)}$$
 
 **Properties:**
-1. **Normalization**: Σᵢ softmax(xᵢ) = 1
-2. **Non-negativity**: softmax(xᵢ) ≥ 0 for all i
+1. **Normalization**: $\sum_i \text{softmax}(x_i) = 1$
+2. **Non-negativity**: $\text{softmax}(x_i) \geq 0$ for all $i$
 3. **Monotonicity**: Preserves relative ordering
 4. **Differentiability**: Smooth gradients for backpropagation
 
@@ -89,14 +87,12 @@ def stable_softmax(x):
 **Attention Score Computation:**
 
 **Scaled Dot-Product:**
-```
-scores = QK^T / √d_k
+$$\text{scores} = \frac{QK^T}{\sqrt{d_k}}$$
 
-Why scaling by √d_k?
+Why scaling by $\sqrt{d_k}$?
 - Prevents scores from becoming too large
 - Keeps softmax in sensitive region
 - Maintains gradient flow
-```
 
 **Before Softmax (Raw Scores):**
 ```python
@@ -141,11 +137,9 @@ weights = relu(scores) / sum(relu(scores))
 **Softmax Gradients:**
 
 **Derivative:**
-```
-∂softmax(xᵢ)/∂xⱼ = softmax(xᵢ)(δᵢⱼ - softmax(xⱼ))
+$$\frac{\partial \text{softmax}(x_i)}{\partial x_j} = \text{softmax}(x_i)(\delta_{ij} - \text{softmax}(x_j))$$
 
-Where δᵢⱼ is the Kronecker delta
-```
+Where $\delta_{ij}$ is the Kronecker delta
 
 **Gradient Flow:**
 ```python

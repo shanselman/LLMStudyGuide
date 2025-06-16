@@ -148,6 +148,13 @@ class MarkdownBrowser {
                 Prism.highlightAll();
             }
             
+            // Render math equations with MathJax
+            if (typeof MathJax !== 'undefined') {
+                MathJax.typesetPromise([this.contentBody]).catch((err) => {
+                    console.log('MathJax rendering error:', err);
+                });
+            }
+            
         } catch (error) {
             console.error('Error rendering markdown:', error);
             this.showError('Failed to render markdown content');

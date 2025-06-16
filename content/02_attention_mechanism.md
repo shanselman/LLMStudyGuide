@@ -7,9 +7,7 @@ The attention mechanism allows LLMs to weigh the importance of different tokens 
 The attention mechanism is the core innovation that enables transformers to process sequences efficiently and capture long-range dependencies. It allows the model to focus on relevant parts of the input when processing each element.
 
 **Mathematical Foundation:**
-```
-Attention(Q, K, V) = softmax(QK^T / √d_k)V
-```
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 Where:
 - Q (Query): What we're looking for
