@@ -258,3 +258,6 @@ attention_weights = F.dropout(attention_weights, p=0.1)
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/24_dot_product_self_attention_context.md) for real-world applications, interview perspectives, and practical implications.

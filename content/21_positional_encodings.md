@@ -234,3 +234,6 @@ def apply_alibi_bias(attention_scores, seq_len):
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/21_positional_encodings_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -53,3 +53,7 @@ P(w_i) = exp(logits_i / τ) / Σ_j exp(logits_j / τ)
 1. Experiment with different temperature schedules during generation
 2. Analyze the relationship between temperature and output quality across domains
 3. Implement adaptive temperature based on uncertainty estimation
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/06_temperature_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -53,3 +53,7 @@ Where α is a length penalty parameter to prevent bias toward shorter sequences.
 1. Implement beam search with different scoring functions
 2. Compare beam search with sampling methods on various tasks
 3. Study the impact of beam width on generation quality and diversity
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/05_beam_search_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -29,3 +29,6 @@ Foundation models span multiple modalities and architectures, including language
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/34_foundation_models_types_context.md) for real-world applications, interview perspectives, and practical implications.

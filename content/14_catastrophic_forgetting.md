@@ -163,3 +163,6 @@ total_loss = task_loss + α * distillation_loss
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/14_catastrophic_forgetting_context.md) for real-world applications, interview perspectives, and practical implications.

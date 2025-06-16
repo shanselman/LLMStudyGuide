@@ -80,3 +80,7 @@ Output: p(y_t) = softmax(W_s s_t)
 1. Implement a basic Seq2Seq model for machine translation
 2. Compare RNN-based vs. Transformer-based architectures
 3. Study different attention mechanisms and their impact on performance
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/08_sequence_to_sequence_context.md) for real-world applications, interview perspectives, and practical implications.

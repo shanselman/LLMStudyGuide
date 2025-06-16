@@ -117,5 +117,4 @@ embedding_matrix = torch.randn(vocab_size, embed_dim) * 0.02
 
 ---
 
-## Questions 11-20: Core Concepts
-
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/10_embeddings_context.md) for real-world applications, interview perspectives, and practical implications.

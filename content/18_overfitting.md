@@ -251,3 +251,6 @@ kfold = KFold(n_splits=5, shuffle=True)
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/18_overfitting_context.md) for real-world applications, interview perspectives, and practical implications.

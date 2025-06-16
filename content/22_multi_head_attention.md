@@ -184,3 +184,6 @@ def compute_head_importance(model, dataset):
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/22_multi_head_attention_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -37,3 +37,6 @@ def kl_divergence(p, q, temperature=1.0):
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/29_kl_divergence_context.md) for real-world applications, interview perspectives, and practical implications.

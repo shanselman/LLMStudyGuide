@@ -47,5 +47,4 @@ def kg_augmented_generation(query, kg, llm):
 
 ---
 
-## Questions 41-50: Deployment & Challenges
-
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/40_knowledge_graph_integration_context.md) for real-world applications, interview perspectives, and practical implications.

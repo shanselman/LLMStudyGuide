@@ -31,3 +31,6 @@ J_layernorm = ∂(normalized_output)/∂(input)
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/27_jacobian_matrix_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -4,303 +4,603 @@
       "name": "content/01_tokenization.md",
       "title": "1 - Tokenization",
       "fullTitle": "Question 1 - Tokenization",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/01_tokenization_context.md",
+      "title": "1 - Tokenization Context",
+      "fullTitle": "Question 1 - Tokenization Context",
+      "linkCount": 0
     },
     {
       "name": "content/02_attention_mechanism.md",
       "title": "2 - Attention Mechanism",
       "fullTitle": "Question 2 - Attention Mechanism",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/02_attention_mechanism_context.md",
+      "title": "2 - Attention Mechanism Context",
+      "fullTitle": "Question 2 - Attention Mechanism Context",
+      "linkCount": 0
     },
     {
       "name": "content/03_context_window.md",
       "title": "3 - Context Window",
       "fullTitle": "Question 3 - Context Window",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/03_context_window_context.md",
+      "title": "3 - Context Window Context",
+      "fullTitle": "Question 3 - Context Window Context",
+      "linkCount": 0
     },
     {
       "name": "content/04_lora_vs_qlora.md",
       "title": "4 - Lora Vs Qlora",
       "fullTitle": "Question 4 - Lora Vs Qlora",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/04_lora_vs_qlora_context.md",
+      "title": "4 - Lora Vs Qlora Context",
+      "fullTitle": "Question 4 - Lora Vs Qlora Context",
+      "linkCount": 0
     },
     {
       "name": "content/05_beam_search.md",
       "title": "5 - Beam Search",
       "fullTitle": "Question 5 - Beam Search",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/05_beam_search_context.md",
+      "title": "5 - Beam Search Context",
+      "fullTitle": "Question 5 - Beam Search Context",
+      "linkCount": 0
     },
     {
       "name": "content/06_temperature.md",
       "title": "6 - Temperature",
       "fullTitle": "Question 6 - Temperature",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/06_temperature_context.md",
+      "title": "6 - Temperature Context",
+      "fullTitle": "Question 6 - Temperature Context",
+      "linkCount": 0
     },
     {
       "name": "content/07_masked_language_modeling.md",
       "title": "7 - Masked Language Modeling",
       "fullTitle": "Question 7 - Masked Language Modeling",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/07_masked_language_modeling_context.md",
+      "title": "7 - Masked Language Modeling Context",
+      "fullTitle": "Question 7 - Masked Language Modeling Context",
+      "linkCount": 0
     },
     {
       "name": "content/08_sequence_to_sequence.md",
       "title": "8 - Sequence To Sequence",
       "fullTitle": "Question 8 - Sequence To Sequence",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/08_sequence_to_sequence_context.md",
+      "title": "8 - Sequence To Sequence Context",
+      "fullTitle": "Question 8 - Sequence To Sequence Context",
+      "linkCount": 0
     },
     {
       "name": "content/09_autoregressive_vs_masked.md",
       "title": "9 - Autoregressive Vs Masked",
       "fullTitle": "Question 9 - Autoregressive Vs Masked",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/09_autoregressive_vs_masked_context.md",
+      "title": "9 - Autoregressive Vs Masked Context",
+      "fullTitle": "Question 9 - Autoregressive Vs Masked Context",
+      "linkCount": 0
     },
     {
       "name": "content/10_embeddings.md",
       "title": "10 - Embeddings",
       "fullTitle": "Question 10 - Embeddings",
-      "linkCount": 7
+      "linkCount": 8
+    },
+    {
+      "name": "content/10_embeddings_context.md",
+      "title": "10 - Embeddings Context",
+      "fullTitle": "Question 10 - Embeddings Context",
+      "linkCount": 0
     },
     {
       "name": "content/11_next_sentence_prediction.md",
       "title": "11 - Next Sentence Prediction",
       "fullTitle": "Question 11 - Next Sentence Prediction",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/11_next_sentence_prediction_context.md",
+      "title": "11 - Next Sentence Prediction Context",
+      "fullTitle": "Question 11 - Next Sentence Prediction Context",
+      "linkCount": 0
     },
     {
       "name": "content/12_top_k_and_top_p_sampling.md",
       "title": "12 - Top K And Top P Sampling",
       "fullTitle": "Question 12 - Top K And Top P Sampling",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/12_top_k_and_top_p_sampling_context.md",
+      "title": "12 - Top K And Top P Sampling Context",
+      "fullTitle": "Question 12 - Top K And Top P Sampling Context",
+      "linkCount": 0
     },
     {
       "name": "content/13_prompt_engineering.md",
       "title": "13 - Prompt Engineering",
       "fullTitle": "Question 13 - Prompt Engineering",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/13_prompt_engineering_context.md",
+      "title": "13 - Prompt Engineering Context",
+      "fullTitle": "Question 13 - Prompt Engineering Context",
+      "linkCount": 0
     },
     {
       "name": "content/14_catastrophic_forgetting.md",
       "title": "14 - Catastrophic Forgetting",
       "fullTitle": "Question 14 - Catastrophic Forgetting",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/14_catastrophic_forgetting_context.md",
+      "title": "14 - Catastrophic Forgetting Context",
+      "fullTitle": "Question 14 - Catastrophic Forgetting Context",
+      "linkCount": 0
     },
     {
       "name": "content/15_model_distillation.md",
       "title": "15 - Model Distillation",
       "fullTitle": "Question 15 - Model Distillation",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/15_model_distillation_context.md",
+      "title": "15 - Model Distillation Context",
+      "fullTitle": "Question 15 - Model Distillation Context",
+      "linkCount": 0
     },
     {
       "name": "content/16_out_of_vocabulary_words.md",
       "title": "16 - Out Of Vocabulary Words",
       "fullTitle": "Question 16 - Out Of Vocabulary Words",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/16_out_of_vocabulary_words_context.md",
+      "title": "16 - Out Of Vocabulary Words Context",
+      "fullTitle": "Question 16 - Out Of Vocabulary Words Context",
+      "linkCount": 0
     },
     {
       "name": "content/17_transformers_vs_seq2seq.md",
       "title": "17 - Transformers Vs Seq2seq",
       "fullTitle": "Question 17 - Transformers Vs Seq2seq",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/17_transformers_vs_seq2seq_context.md",
+      "title": "17 - Transformers Vs Seq2seq Context",
+      "fullTitle": "Question 17 - Transformers Vs Seq2seq Context",
+      "linkCount": 0
     },
     {
       "name": "content/18_overfitting.md",
       "title": "18 - Overfitting",
       "fullTitle": "Question 18 - Overfitting",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/18_overfitting_context.md",
+      "title": "18 - Overfitting Context",
+      "fullTitle": "Question 18 - Overfitting Context",
+      "linkCount": 0
     },
     {
       "name": "content/19_generative_vs_discriminative.md",
       "title": "19 - Generative Vs Discriminative",
       "fullTitle": "Question 19 - Generative Vs Discriminative",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/19_generative_vs_discriminative_context.md",
+      "title": "19 - Generative Vs Discriminative Context",
+      "fullTitle": "Question 19 - Generative Vs Discriminative Context",
+      "linkCount": 0
     },
     {
       "name": "content/20_gpt4_vs_gpt3.md",
       "title": "20 - Gpt4 Vs Gpt3",
       "fullTitle": "Question 20 - Gpt4 Vs Gpt3",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/20_gpt4_vs_gpt3_context.md",
+      "title": "20 - Gpt4 Vs Gpt3 Context",
+      "fullTitle": "Question 20 - Gpt4 Vs Gpt3 Context",
+      "linkCount": 0
     },
     {
       "name": "content/21_positional_encodings.md",
       "title": "21 - Positional Encodings",
       "fullTitle": "Question 21 - Positional Encodings",
-      "linkCount": 7
+      "linkCount": 8
+    },
+    {
+      "name": "content/21_positional_encodings_context.md",
+      "title": "21 - Positional Encodings Context",
+      "fullTitle": "Question 21 - Positional Encodings Context",
+      "linkCount": 0
     },
     {
       "name": "content/22_multi_head_attention.md",
       "title": "22 - Multi Head Attention",
       "fullTitle": "Question 22 - Multi Head Attention",
-      "linkCount": 7
+      "linkCount": 8
+    },
+    {
+      "name": "content/22_multi_head_attention_context.md",
+      "title": "22 - Multi Head Attention Context",
+      "fullTitle": "Question 22 - Multi Head Attention Context",
+      "linkCount": 3
     },
     {
       "name": "content/23_softmax_function.md",
       "title": "23 - Softmax Function",
       "fullTitle": "Question 23 - Softmax Function",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/23_softmax_function_context.md",
+      "title": "23 - Softmax Function Context",
+      "fullTitle": "Question 23 - Softmax Function Context",
+      "linkCount": 0
     },
     {
       "name": "content/24_dot_product_self_attention.md",
       "title": "24 - Dot Product Self Attention",
       "fullTitle": "Question 24 - Dot Product Self Attention",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/24_dot_product_self_attention_context.md",
+      "title": "24 - Dot Product Self Attention Context",
+      "fullTitle": "Question 24 - Dot Product Self Attention Context",
+      "linkCount": 0
     },
     {
       "name": "content/25_cross_entropy_loss.md",
       "title": "25 - Cross Entropy Loss",
       "fullTitle": "Question 25 - Cross Entropy Loss",
-      "linkCount": 3
+      "linkCount": 4
+    },
+    {
+      "name": "content/25_cross_entropy_loss_context.md",
+      "title": "25 - Cross Entropy Loss Context",
+      "fullTitle": "Question 25 - Cross Entropy Loss Context",
+      "linkCount": 0
     },
     {
       "name": "content/26_gradients_embeddings.md",
       "title": "26 - Gradients Embeddings",
       "fullTitle": "Question 26 - Gradients Embeddings",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/26_gradients_embeddings_context.md",
+      "title": "26 - Gradients Embeddings Context",
+      "fullTitle": "Question 26 - Gradients Embeddings Context",
+      "linkCount": 0
     },
     {
       "name": "content/27_jacobian_matrix.md",
       "title": "27 - Jacobian Matrix",
       "fullTitle": "Question 27 - Jacobian Matrix",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/27_jacobian_matrix_context.md",
+      "title": "27 - Jacobian Matrix Context",
+      "fullTitle": "Question 27 - Jacobian Matrix Context",
+      "linkCount": 0
     },
     {
       "name": "content/28_eigenvalues_eigenvectors.md",
       "title": "28 - Eigenvalues Eigenvectors",
       "fullTitle": "Question 28 - Eigenvalues Eigenvectors",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/28_eigenvalues_eigenvectors_context.md",
+      "title": "28 - Eigenvalues Eigenvectors Context",
+      "fullTitle": "Question 28 - Eigenvalues Eigenvectors Context",
+      "linkCount": 0
     },
     {
       "name": "content/29_kl_divergence.md",
       "title": "29 - Kl Divergence",
       "fullTitle": "Question 29 - Kl Divergence",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/29_kl_divergence_context.md",
+      "title": "29 - Kl Divergence Context",
+      "fullTitle": "Question 29 - Kl Divergence Context",
+      "linkCount": 0
     },
     {
       "name": "content/30_relu_derivative.md",
       "title": "30 - Relu Derivative",
       "fullTitle": "Question 30 - Relu Derivative",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/30_relu_derivative_context.md",
+      "title": "30 - Relu Derivative Context",
+      "fullTitle": "Question 30 - Relu Derivative Context",
+      "linkCount": 0
     },
     {
       "name": "content/31_chain_rule_gradient_descent.md",
       "title": "31 - Chain Rule Gradient Descent",
       "fullTitle": "Question 31 - Chain Rule Gradient Descent",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/31_chain_rule_gradient_descent_context.md",
+      "title": "31 - Chain Rule Gradient Descent Context",
+      "fullTitle": "Question 31 - Chain Rule Gradient Descent Context",
+      "linkCount": 0
     },
     {
       "name": "content/32_attention_scores_calculation.md",
       "title": "32 - Attention Scores Calculation",
       "fullTitle": "Question 32 - Attention Scores Calculation",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/32_attention_scores_calculation_context.md",
+      "title": "32 - Attention Scores Calculation Context",
+      "fullTitle": "Question 32 - Attention Scores Calculation Context",
+      "linkCount": 0
     },
     {
       "name": "content/33_gemini_multimodal_optimization.md",
       "title": "33 - Gemini Multimodal Optimization",
       "fullTitle": "Question 33 - Gemini Multimodal Optimization",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/33_gemini_multimodal_optimization_context.md",
+      "title": "33 - Gemini Multimodal Optimization Context",
+      "fullTitle": "Question 33 - Gemini Multimodal Optimization Context",
+      "linkCount": 0
     },
     {
       "name": "content/34_foundation_models_types.md",
       "title": "34 - Foundation Models Types",
       "fullTitle": "Question 34 - Foundation Models Types",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/34_foundation_models_types_context.md",
+      "title": "34 - Foundation Models Types Context",
+      "fullTitle": "Question 34 - Foundation Models Types Context",
+      "linkCount": 0
     },
     {
       "name": "content/35_peft_catastrophic_forgetting.md",
       "title": "35 - Peft Catastrophic Forgetting",
       "fullTitle": "Question 35 - Peft Catastrophic Forgetting",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/35_peft_catastrophic_forgetting_context.md",
+      "title": "35 - Peft Catastrophic Forgetting Context",
+      "fullTitle": "Question 35 - Peft Catastrophic Forgetting Context",
+      "linkCount": 0
     },
     {
       "name": "content/36_retrieval_augmented_generation.md",
       "title": "36 - Retrieval Augmented Generation",
       "fullTitle": "Question 36 - Retrieval Augmented Generation",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/36_retrieval_augmented_generation_context.md",
+      "title": "36 - Retrieval Augmented Generation Context",
+      "fullTitle": "Question 36 - Retrieval Augmented Generation Context",
+      "linkCount": 0
     },
     {
       "name": "content/37_mixture_of_experts.md",
       "title": "37 - Mixture Of Experts",
       "fullTitle": "Question 37 - Mixture Of Experts",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/37_mixture_of_experts_context.md",
+      "title": "37 - Mixture Of Experts Context",
+      "fullTitle": "Question 37 - Mixture Of Experts Context",
+      "linkCount": 0
     },
     {
       "name": "content/38_chain_of_thought_prompting.md",
       "title": "38 - Chain Of Thought Prompting",
       "fullTitle": "Question 38 - Chain Of Thought Prompting",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/38_chain_of_thought_prompting_context.md",
+      "title": "38 - Chain Of Thought Prompting Context",
+      "fullTitle": "Question 38 - Chain Of Thought Prompting Context",
+      "linkCount": 0
     },
     {
       "name": "content/39_discriminative_vs_generative_ai.md",
       "title": "39 - Discriminative Vs Generative Ai",
       "fullTitle": "Question 39 - Discriminative Vs Generative Ai",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/39_discriminative_vs_generative_ai_context.md",
+      "title": "39 - Discriminative Vs Generative Ai Context",
+      "fullTitle": "Question 39 - Discriminative Vs Generative Ai Context",
+      "linkCount": 0
     },
     {
       "name": "content/40_knowledge_graph_integration.md",
       "title": "40 - Knowledge Graph Integration",
       "fullTitle": "Question 40 - Knowledge Graph Integration",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/40_knowledge_graph_integration_context.md",
+      "title": "40 - Knowledge Graph Integration Context",
+      "fullTitle": "Question 40 - Knowledge Graph Integration Context",
+      "linkCount": 0
     },
     {
       "name": "content/41_zero_shot_learning.md",
       "title": "41 - Zero Shot Learning",
       "fullTitle": "Question 41 - Zero Shot Learning",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/41_zero_shot_learning_context.md",
+      "title": "41 - Zero Shot Learning Context",
+      "fullTitle": "Question 41 - Zero Shot Learning Context",
+      "linkCount": 0
     },
     {
       "name": "content/42_adaptive_softmax.md",
       "title": "42 - Adaptive Softmax",
       "fullTitle": "Question 42 - Adaptive Softmax",
-      "linkCount": 4
+      "linkCount": 5
+    },
+    {
+      "name": "content/42_adaptive_softmax_context.md",
+      "title": "42 - Adaptive Softmax Context",
+      "fullTitle": "Question 42 - Adaptive Softmax Context",
+      "linkCount": 0
     },
     {
       "name": "content/43_vanishing_gradient_problem.md",
       "title": "43 - Vanishing Gradient Problem",
       "fullTitle": "Question 43 - Vanishing Gradient Problem",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/43_vanishing_gradient_problem_context.md",
+      "title": "43 - Vanishing Gradient Problem Context",
+      "fullTitle": "Question 43 - Vanishing Gradient Problem Context",
+      "linkCount": 0
     },
     {
       "name": "content/44_few_shot_learning.md",
       "title": "44 - Few Shot Learning",
       "fullTitle": "Question 44 - Few Shot Learning",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/44_few_shot_learning_context.md",
+      "title": "44 - Few Shot Learning Context",
+      "fullTitle": "Question 44 - Few Shot Learning Context",
+      "linkCount": 0
     },
     {
       "name": "content/45_fix_biased_incorrect_outputs.md",
       "title": "45 - Fix Biased Incorrect Outputs",
       "fullTitle": "Question 45 - Fix Biased Incorrect Outputs",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/45_fix_biased_incorrect_outputs_context.md",
+      "title": "45 - Fix Biased Incorrect Outputs Context",
+      "fullTitle": "Question 45 - Fix Biased Incorrect Outputs Context",
+      "linkCount": 0
     },
     {
       "name": "content/46_encoders_vs_decoders.md",
       "title": "46 - Encoders Vs Decoders",
       "fullTitle": "Question 46 - Encoders Vs Decoders",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/46_encoders_vs_decoders_context.md",
+      "title": "46 - Encoders Vs Decoders Context",
+      "fullTitle": "Question 46 - Encoders Vs Decoders Context",
+      "linkCount": 0
     },
     {
       "name": "content/47_llms_vs_statistical_models.md",
       "title": "47 - Llms Vs Statistical Models",
       "fullTitle": "Question 47 - Llms Vs Statistical Models",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/47_llms_vs_statistical_models_context.md",
+      "title": "47 - Llms Vs Statistical Models Context",
+      "fullTitle": "Question 47 - Llms Vs Statistical Models Context",
+      "linkCount": 0
     },
     {
       "name": "content/48_hyperparameters.md",
       "title": "48 - Hyperparameters",
       "fullTitle": "Question 48 - Hyperparameters",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/48_hyperparameters_context.md",
+      "title": "48 - Hyperparameters Context",
+      "fullTitle": "Question 48 - Hyperparameters Context",
+      "linkCount": 0
     },
     {
       "name": "content/49_large_language_model_definition.md",
       "title": "49 - Large Language Model Definition",
       "fullTitle": "Question 49 - Large Language Model Definition",
-      "linkCount": 6
+      "linkCount": 7
+    },
+    {
+      "name": "content/49_large_language_model_definition_context.md",
+      "title": "49 - Large Language Model Definition Context",
+      "fullTitle": "Question 49 - Large Language Model Definition Context",
+      "linkCount": 0
     },
     {
       "name": "content/50_deployment_challenges.md",
       "title": "50 - Deployment Challenges",
       "fullTitle": "Question 50 - Deployment Challenges",
-      "linkCount": 5
+      "linkCount": 6
+    },
+    {
+      "name": "content/50_deployment_challenges_context.md",
+      "title": "50 - Deployment Challenges Context",
+      "fullTitle": "Question 50 - Deployment Challenges Context",
+      "linkCount": 0
     }
   ],
-  "totalLinks": 262,
-  "generated": "2025-06-12T05:48:05.556Z"
+  "totalLinks": 315,
+  "generated": "2025-06-16T07:15:05.614Z"
 }

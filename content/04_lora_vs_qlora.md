@@ -45,3 +45,7 @@ Where r << min(d_in, d_out) for matrices A ∈ R^(d×r) and B ∈ R^(r×d)
 1. Compare LoRA rank sizes on different downstream tasks
 2. Implement QLoRA from scratch using PyTorch
 3. Analyze the trade-offs between quantization and model performance
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/04_lora_vs_qlora_context.md) for real-world applications, interview perspectives, and practical implications.

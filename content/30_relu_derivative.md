@@ -35,5 +35,4 @@ ReLU'(x) = {1 if x > 0, 0 if x ≤ 0}
 
 ---
 
-## Questions 31-40: Advanced Techniques
-
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/30_relu_derivative_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -40,3 +40,7 @@ Where:
 1. Implement multi-head attention from scratch
 2. Visualize attention patterns in pre-trained models
 3. Study sparse attention mechanisms for efficiency
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/02_attention_mechanism_context.md) for real-world applications, interview perspectives, and practical implications.

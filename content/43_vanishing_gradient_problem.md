@@ -33,3 +33,6 @@ With residuals: ∂L/∂x = ∂L/∂output × (1 + ∂F/∂x)
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/43_vanishing_gradient_problem_context.md) for real-world applications, interview perspectives, and practical implications.

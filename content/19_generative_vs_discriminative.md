@@ -220,3 +220,6 @@ loss = -Σ yᵢ log(P(yᵢ|xᵢ))
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/19_generative_vs_discriminative_context.md) for real-world applications, interview perspectives, and practical implications.

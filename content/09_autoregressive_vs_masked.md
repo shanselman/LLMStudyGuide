@@ -98,3 +98,6 @@ Autoregressive and masked language models represent two fundamental approaches t
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/09_autoregressive_vs_masked_context.md) for real-world applications, interview perspectives, and practical implications.

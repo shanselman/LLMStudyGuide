@@ -34,3 +34,6 @@ Encoders and decoders in transformers serve complementary roles: encoders create
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/46_encoders_vs_decoders_context.md) for real-world applications, interview perspectives, and practical implications.

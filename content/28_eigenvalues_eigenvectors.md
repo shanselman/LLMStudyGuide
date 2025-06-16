@@ -28,3 +28,6 @@ Where A is covariance matrix, v is eigenvector, λ is eigenvalue
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/28_eigenvalues_eigenvectors_context.md) for real-world applications, interview perspectives, and practical implications.

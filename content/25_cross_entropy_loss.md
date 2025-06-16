@@ -296,3 +296,6 @@ def distillation_loss(student_logits, teacher_logits, targets, alpha=0.5, temper
 
 *[Continuing with Questions 26-50...]*
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/25_cross_entropy_loss_context.md) for real-world applications, interview perspectives, and practical implications.

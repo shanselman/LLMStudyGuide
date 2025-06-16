@@ -113,3 +113,6 @@ next_token = sample(probs)
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/12_top_k_and_top_p_sampling_context.md) for real-world applications, interview perspectives, and practical implications.

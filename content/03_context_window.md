@@ -40,3 +40,7 @@ The context window (or context length) refers to the maximum number of tokens an
 1. Analyze the relationship between context length and performance on various tasks
 2. Implement efficient attention mechanisms for long sequences
 3. Study context window utilization patterns in real applications
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/03_context_window_context.md) for real-world applications, interview perspectives, and practical implications.

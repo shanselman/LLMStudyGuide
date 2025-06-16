@@ -30,3 +30,6 @@ output = W_0 × input + (B × A) × input
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/35_peft_catastrophic_forgetting_context.md) for real-world applications, interview perspectives, and practical implications.

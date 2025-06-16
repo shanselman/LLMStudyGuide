@@ -4,7 +4,7 @@ class MarkdownBrowser {
         this.contentBody = document.getElementById('contentBody');
         this.markdownFiles = [];
         this.currentFile = null;
-        this.studyProgress = new StudyProgressTracker();
+        this.studyProgress = new StudyProgressTracker(this);
         
         this.init();
     }
@@ -198,7 +198,8 @@ class MarkdownBrowser {
 }
 
 class StudyProgressTracker {
-    constructor() {
+    constructor(app) {
+        this.app = app; // Reference to the main MarkdownBrowser instance
         this.storageKey = 'llm-study-progress';
         this.allLinksKey = 'llm-study-all-links';
         this.completedLinks = this.loadProgress();
@@ -316,9 +317,30 @@ class StudyProgressTracker {
             
             // Add click tracking to the link
             newLink.addEventListener('click', (e) => {
-                // Allow the link to open
+                // Check if this is a context link (ends with _context.md)
+                const isContextLink = url.includes('_context.md');
+                
+                if (isContextLink) {
+                    e.preventDefault(); // Prevent normal navigation
+                    
+                    // Extract the filename from the URL
+                    const filename = url.split('/').pop();
+                    const fullPath = `content/${filename}`;
+                    
+                    // Use the app's navigation system
+                    this.app.loadMarkdownFile(fullPath);
+                    
+                    // Find and activate the corresponding sidebar item
+                    const fileItems = document.querySelectorAll('.file-item');
+                    fileItems.forEach(item => {
+                        if (item.dataset.file === fullPath) {
+                            this.app.setActiveFile(item);
+                        }
+                    });
+                }
+                
+                // Auto-check the checkbox when link is clicked (for all links)
                 setTimeout(() => {
-                    // Auto-check the checkbox when link is clicked
                     if (!checkbox.checked) {
                         checkbox.checked = true;
                         this.toggleLinkCompletion(linkId, url, text, currentFile);

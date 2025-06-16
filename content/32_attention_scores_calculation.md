@@ -29,3 +29,6 @@ Attention(Q,K,V) = softmax(QK^T/√d_k)V
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/32_attention_scores_calculation_context.md) for real-world applications, interview perspectives, and practical implications.

@@ -71,3 +71,6 @@ Loss: Cross-entropy on [CLS] token representation
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/11_next_sentence_prediction_context.md) for real-world applications, interview perspectives, and practical implications.

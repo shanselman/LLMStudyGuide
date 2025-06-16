@@ -30,3 +30,7 @@ Tokenization is the process of breaking down text into smaller, manageable units
 1. Implement BPE tokenization from scratch
 2. Compare different tokenization strategies on multilingual datasets
 3. Study the impact of vocabulary size on model performance
+
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/01_tokenization_context.md) for real-world applications, interview perspectives, and practical implications.

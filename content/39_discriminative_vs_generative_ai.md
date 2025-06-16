@@ -29,3 +29,6 @@ Discriminative AI models conditional probabilities P(Y|X) for classification and
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/39_discriminative_vs_generative_ai_context.md) for real-world applications, interview perspectives, and practical implications.

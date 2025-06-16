@@ -47,3 +47,6 @@ class MoELayer(nn.Module):
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/37_mixture_of_experts_context.md) for real-world applications, interview perspectives, and practical implications.

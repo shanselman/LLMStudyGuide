@@ -29,3 +29,6 @@ The chain rule enables backpropagation through the complex computational graphs 
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/31_chain_rule_gradient_descent_context.md) for real-world applications, interview perspectives, and practical implications.

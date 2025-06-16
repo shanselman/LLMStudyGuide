@@ -245,3 +245,6 @@ def average_attention_distance(weights):
 
 ---
 
+---
+
+📚 **Want deeper context and business insights?** Check out the [extended context for this topic](content/23_softmax_function_context.md) for real-world applications, interview perspectives, and practical implications.
