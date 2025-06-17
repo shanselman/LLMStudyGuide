@@ -8,9 +8,8 @@ Temperature is a hyperparameter that controls the randomness and creativity of t
 
 **Mathematical Foundation:**
 The temperature parameter τ modifies the softmax function:
-```
-P(w_i) = exp(logits_i / τ) / Σ_j exp(logits_j / τ)
-```
+
+$$P(w_i) = \frac{\exp(logits_i / \tau)}{\sum_j \exp(logits_j / \tau)}$$
 
 **Effects of Different Temperature Values:**
 
