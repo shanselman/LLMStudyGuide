@@ -117,15 +117,15 @@ Human review threshold: Only flag if harmful >90%
 ## The Technical Rabbit Hole (For Those Who Want to Go Deeper)
 
 ### Mathematical Definition
-```
-For input vector z = [z₁, z₂, ..., zₙ]
-Softmax(zᵢ) = e^(zᵢ) / Σⱼ₌₁ⁿ e^(zⱼ)
+
+For input vector $z = [z_1, z_2, ..., z_n]$
+
+$$\text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^n e^{z_j}}$$
 
 Properties:
-- All outputs sum to 1: Σᵢ softmax(zᵢ) = 1
-- All outputs positive: softmax(zᵢ) > 0
-- Preserves order: if zᵢ > zⱼ then softmax(zᵢ) > softmax(zⱼ)
-```
+- All outputs sum to 1: $\sum_i \text{softmax}(z_i) = 1$
+- All outputs positive: $\text{softmax}(z_i) > 0$
+- Preserves order: if $z_i > z_j$ then $\text{softmax}(z_i) > \text{softmax}(z_j)$
 
 ### Why Exponential Function?
 The exponential amplifies differences:
@@ -135,22 +135,21 @@ The exponential amplifies differences:
 
 ### Temperature Parameter
 Softmax can be modified with temperature τ:
-```
-Softmax(zᵢ) = e^(zᵢ/τ) / Σⱼ₌₁ⁿ e^(zⱼ/τ)
+
+$$\text{Softmax}(z_i) = \frac{e^{z_i/\tau}}{\sum_{j=1}^n e^{z_j/\tau}}$$
 
 Temperature effects:
-- τ → 0: Approaches hard max (winner-take-all)
-- τ = 1: Standard softmax
-- τ → ∞: Approaches uniform distribution
-```
+- $\tau \to 0$: Approaches hard max (winner-take-all)
+- $\tau = 1$: Standard softmax
+- $\tau \to \infty$: Approaches uniform distribution
 
 ### Numerical Stability
 Raw softmax can cause overflow with large numbers:
-```
-Problem: e^1000 causes numerical overflow
+
+Problem: $e^{1000}$ causes numerical overflow
+
 Solution: Subtract max before computing:
-softmax(z) = e^(z - max(z)) / Σ e^(zⱼ - max(z))
-```
+$$\text{softmax}(z) = \frac{e^{z - \max(z)}}{\sum e^{z_j - \max(z)}}$$
 
 ## Why This Knowledge Gives You an Edge
 

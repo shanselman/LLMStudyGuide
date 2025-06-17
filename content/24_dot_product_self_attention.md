@@ -206,14 +206,12 @@ def analyze_attention_patterns(attention_weights):
 ```
 
 **Gradient Analysis:**
-```python
-# Gradient of dot product attention
-∂(q·k)/∂q = k
-∂(q·k)/∂k = q
 
-# Gradients flow directly between related positions
-# Enables efficient learning of relationships
-```
+Gradient of dot product attention:
+$$\frac{\partial(q \cdot k)}{\partial q} = k$$
+$$\frac{\partial(q \cdot k)}{\partial k} = q$$
+
+Gradients flow directly between related positions, enabling efficient learning of relationships.
 
 **Common Issues:**
 

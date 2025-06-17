@@ -105,15 +105,14 @@ BERT (Bidirectional Encoder Representations from Transformers) popularized MLM:
 - **DeBERTa:** Disentangled attention for better MLM performance
 
 ### Mathematical Foundation
-```
-MLM Loss = -∑ log P(x_i | x_{\i}, θ)
+
+$$\text{MLM Loss} = -\sum \log P(x_i | x_{\backslash i}, \theta)$$
 
 Where:
-- x_i: masked token
-- x_{\i}: all other tokens (context)
-- θ: model parameters
+- $x_i$: masked token
+- $x_{\backslash i}$: all other tokens (context)
+- $\theta$: model parameters
 - Goal: Maximize probability of correct token given context
-```
 
 ## Why This Knowledge Gives You an Edge
 

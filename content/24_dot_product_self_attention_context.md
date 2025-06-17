@@ -128,18 +128,17 @@ def process_data(items):
 ## The Technical Rabbit Hole (For Those Who Want to Go Deeper)
 
 ### Mathematical Formulation
-```
-Given input sequence X = [x₁, x₂, ..., xₙ]
+
+Given input sequence $X = [x_1, x_2, ..., x_n]$
 
 1. Create Query, Key, Value matrices:
-   Q = XW_Q, K = XW_K, V = XW_V
+   $$Q = XW_Q, \quad K = XW_K, \quad V = XW_V$$
 
 2. Compute attention scores:
-   Attention(Q,K,V) = softmax(QK^T / √d_k)V
+   $$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 3. Each element computes:
-   output_i = Σⱼ attention(qᵢ, kⱼ) × vⱼ
-```
+   $$\text{output}_i = \sum_j \text{attention}(q_i, k_j) \times v_j$$
 
 ### Why Dot Product?
 The dot product QK^T measures similarity:

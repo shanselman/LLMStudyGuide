@@ -12,12 +12,14 @@ Sequence-to-sequence (Seq2Seq) models are neural architectures designed to trans
 3. **Attention Mechanism**: Allows decoder to focus on relevant input parts
 
 **Traditional Seq2Seq (RNN-based):**
-```
-Encoder: h_t = RNN(x_t, h_{t-1})
-Context: c = f(h_1, ..., h_T)
-Decoder: s_t = RNN(y_{t-1}, s_{t-1}, c)
-Output: p(y_t) = softmax(W_s s_t)
-```
+
+$$h_t = \text{RNN}(x_t, h_{t-1})$$
+
+$$c = f(h_1, ..., h_T)$$
+
+$$s_t = \text{RNN}(y_{t-1}, s_{t-1}, c)$$
+
+$$p(y_t) = \text{softmax}(W_s s_t)$$
 
 **Transformer-based Seq2Seq:**
 - Encoder: Stack of self-attention layers

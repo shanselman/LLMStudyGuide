@@ -153,15 +153,16 @@ class MultiHeadAttention:
 ```
 
 ### Mathematical Foundation
-```
-Single-head attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V
+
+Single-head attention:
+$$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 Multi-head attention:
-head_i = Attention(QW_i^Q, KW_i^K, VW_i^V)
-MultiHead(Q,K,V) = Concat(head_1,...,head_h)W^O
+$$\text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)$$
 
-Where each head operates on d_k = d_model/h dimensions
-```
+$$\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_1,...,\text{head}_h)W^O$$
+
+Where each head operates on $d_k = d_{model}/h$ dimensions
 
 ### Why Multiple Heads Work Better
 **Representation subspaces:**

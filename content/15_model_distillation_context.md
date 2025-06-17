@@ -130,16 +130,18 @@ Companies using distillation report:
 - Understands what parts of input are important
 
 ### Mathematical Foundation
-```
-Standard training: min L(y, f(x))
-Distillation training: min αL(y, f_s(x)) + (1-α)L_KD(f_t(x), f_s(x))
+
+Standard training:
+$$\min L(y, f(x))$$
+
+Distillation training:
+$$\min \alpha L(y, f_s(x)) + (1-\alpha)L_{KD}(f_t(x), f_s(x))$$
 
 Where:
-- f_s: Student model
-- f_t: Teacher model  
-- L_KD: Knowledge distillation loss (usually KL divergence)
-- α: Balance between data loss and distillation loss
-```
+- $f_s$: Student model
+- $f_t$: Teacher model  
+- $L_{KD}$: Knowledge distillation loss (usually KL divergence)
+- $\alpha$: Balance between data loss and distillation loss
 
 ### Advanced Techniques
 - **Progressive distillation:** Multiple rounds of distillation for better compression

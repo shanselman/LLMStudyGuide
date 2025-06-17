@@ -141,14 +141,13 @@ Embedding gradient: ∂loss/∂embedding = accumulated_gradient_from_all_usages
 
 ### Mathematical Relationship
 For a word w used in multiple contexts:
-```
-∂L/∂e_w = Σ_contexts ∂L/∂h_context × ∂h_context/∂e_w
+
+$$\frac{\partial L}{\partial e_w} = \sum_{\text{contexts}} \frac{\partial L}{\partial h_{\text{context}}} \times \frac{\partial h_{\text{context}}}{\partial e_w}$$
 
 Where:
-- L: Total loss
-- e_w: Embedding for word w  
-- h_context: Hidden representation in each context
-```
+- $L$: Total loss
+- $e_w$: Embedding for word w  
+- $h_{\text{context}}$: Hidden representation in each context
 
 ### Common Gradient Issues
 **Vanishing gradients:** Updates become too small to matter

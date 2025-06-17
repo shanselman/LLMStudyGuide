@@ -149,13 +149,12 @@ Sinusoidal encodings create unique "fingerprints" for each position:
 - Pattern allows model to learn relative distances between positions
 
 ### Why This Design Works
-```
-Attention mechanism with positional encoding:
-Attention(Q,K,V) = softmax((Q+P_q)(K+P_k)^T / √d)V
 
-Where P_q and P_k are positional encodings that help model
+Attention mechanism with positional encoding:
+$$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{(Q+P_q)(K+P_k)^T}{\sqrt{d}}\right)V$$
+
+Where $P_q$ and $P_k$ are positional encodings that help model
 attend based on both content similarity AND positional relationships
-```
 
 ## Why This Knowledge Gives You an Edge
 

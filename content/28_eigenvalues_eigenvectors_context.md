@@ -118,38 +118,36 @@ Strategy: Hedge against principal components instead of individual assets
 
 ### Mathematical Definition
 For matrix A, eigenvalue λ and eigenvector v satisfy:
-```
-Av = λv
+
+$$Av = \lambda v$$
 
 Where:
-- v ≠ 0 (non-zero vector)
-- λ is a scalar (can be complex)
-- v points in direction unchanged by transformation A
-- λ indicates how much v is scaled by A
-```
+- $v \neq 0$ (non-zero vector)
+- $\lambda$ is a scalar (can be complex)
+- $v$ points in direction unchanged by transformation A
+- $\lambda$ indicates how much $v$ is scaled by A
 
 ### Eigendecomposition
 For square matrix A:
-```
-A = QΛQ⁻¹
+
+$$A = Q\Lambda Q^{-1}$$
 
 Where:
-- Q: Matrix of eigenvectors (columns)
-- Λ: Diagonal matrix of eigenvalues
-- Enables efficient computation of A^n, e^A, etc.
-```
+- $Q$: Matrix of eigenvectors (columns)
+- $\Lambda$: Diagonal matrix of eigenvalues
+- Enables efficient computation of $A^n$, $e^A$, etc.
 
 ### Principal Component Analysis (PCA)
 PCA finds eigenvalues/eigenvectors of covariance matrix:
-```
-C = (1/n)X^T X  (covariance matrix)
-Cv_i = λ_i v_i  (eigenvalue problem)
+
+$$C = \frac{1}{n}X^T X$$  (covariance matrix)
+
+$$Cv_i = \lambda_i v_i$$  (eigenvalue problem)
 
 Where:
-- v_i: Principal components (directions of maximum variance)
-- λ_i: Variance explained by each component
+- $v_i$: Principal components (directions of maximum variance)
+- $\lambda_i$: Variance explained by each component
 - Used for dimensionality reduction and data visualization
-```
 
 ### Applications in Deep Learning
 

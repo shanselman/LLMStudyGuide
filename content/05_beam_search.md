@@ -20,9 +20,9 @@ Beam search is a heuristic search algorithm that maintains multiple partial sequ
 5. Return highest-scoring complete sequence
 
 **Mathematical Scoring:**
-```
-Score(sequence) = log P(w₁, w₂, ..., wₙ) / n^α
-```
+
+$$\text{Score(sequence)} = \frac{\log P(w_1, w_2, ..., w_n)}{n^\alpha}$$
+
 Where α is a length penalty parameter to prevent bias toward shorter sequences.
 
 **Advantages of Beam Search:**

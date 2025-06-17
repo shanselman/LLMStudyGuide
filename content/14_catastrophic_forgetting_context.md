@@ -128,16 +128,18 @@ Neural networks learn by adjusting weights:
 - **PackNet:** Prune networks and use freed capacity for new tasks
 
 ### Mathematical Formulation
-```
-Standard training: min L_new(θ)
-EWC training: min L_new(θ) + λ Σ F_i(θ_i - θ*_i)²
+
+Standard training:
+$$\min L_{new}(\theta)$$
+
+EWC training:
+$$\min L_{new}(\theta) + \lambda \sum_i F_i(\theta_i - \theta^*_i)^2$$
 
 Where:
-- L_new: Loss on new task
-- F_i: Fisher information (importance of parameter i)
-- θ*_i: Optimal parameter from previous task
-- λ: Regularization strength
-```
+- $L_{new}$: Loss on new task
+- $F_i$: Fisher information (importance of parameter i)
+- $\theta^*_i$: Optimal parameter from previous task
+- $\lambda$: Regularization strength
 
 ## Why This Knowledge Gives You an Edge
 
